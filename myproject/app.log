@@ -16,3 +16,22 @@ WARNING:django.request:Not Found: /favicon.ico
 WARNING:django.server:"GET /favicon.ico HTTP/1.1" 404 2441
 INFO:root:Посещена страница 'о себе'
 INFO:django.server:"GET /about/ HTTP/1.1" 200 308
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\django_lesson\myproject\myapp\urls.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\django_lesson\myproject\myapp2\urls.py changed, reloading.
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена страница 'о себе'
+INFO:django.server:"GET /about/ HTTP/1.1" 200 308
+INFO:root:Посещена страница 'о себе'
+INFO:django.server:"GET /about/ HTTP/1.1" 200 308
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена страница 'о себе'
+INFO:django.server:"GET /about/ HTTP/1.1" 200 308
+INFO:django.server:"GET /orders HTTP/1.1" 301 0
+INFO:root:Посещена страница заказов
+INFO:django.server:"GET /orders/ HTTP/1.1" 200 1289

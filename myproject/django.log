@@ -18,3 +18,21 @@ INFO 2024-02-16 09:56:41,591 basehttp 12056 1720 "GET / HTTP/1.1" 200 388
 WARNING 2024-02-16 09:56:41,764 log 12056 1720 Not Found: /favicon.ico
 WARNING 2024-02-16 09:56:41,764 basehttp 12056 1720 "GET /favicon.ico HTTP/1.1" 404 2441
 INFO 2024-02-16 09:56:52,454 basehttp 12056 1720 "GET /about/ HTTP/1.1" 200 308
+INFO 2024-02-16 13:34:13,076 autoreload 14460 17956 Watching for file changes with StatReloader
+INFO 2024-02-16 13:38:06,514 autoreload 2460 272 Watching for file changes with StatReloader
+INFO 2024-02-16 13:39:58,374 autoreload 15132 12056 Watching for file changes with StatReloader
+INFO 2024-02-16 13:41:10,263 autoreload 17896 13888 Watching for file changes with StatReloader
+INFO 2024-02-16 13:46:29,524 autoreload 17896 13888 C:\Users\Aleksandr\PycharmProjects\django_lesson\myproject\myapp\urls.py changed, reloading.
+INFO 2024-02-16 13:46:30,148 autoreload 5540 18032 Watching for file changes with StatReloader
+INFO 2024-02-16 13:46:38,532 autoreload 16464 16560 Watching for file changes with StatReloader
+INFO 2024-02-16 13:48:08,523 autoreload 16464 16560 C:\Users\Aleksandr\PycharmProjects\django_lesson\myproject\myapp2\urls.py changed, reloading.
+INFO 2024-02-16 13:48:09,145 autoreload 1404 16328 Watching for file changes with StatReloader
+INFO 2024-02-16 13:48:13,415 basehttp 1404 14588 "GET / HTTP/1.1" 200 388
+INFO 2024-02-16 13:48:17,663 basehttp 1404 14588 "GET / HTTP/1.1" 200 388
+INFO 2024-02-16 13:48:21,396 basehttp 1404 14588 "GET /about/ HTTP/1.1" 200 308
+INFO 2024-02-16 13:48:23,165 basehttp 1404 14588 "GET /about/ HTTP/1.1" 200 308
+INFO 2024-02-16 13:48:31,837 basehttp 1404 14588 "GET / HTTP/1.1" 200 388
+INFO 2024-02-16 13:48:32,639 basehttp 1404 14588 "GET / HTTP/1.1" 200 388
+INFO 2024-02-16 13:48:36,007 basehttp 1404 14588 "GET /about/ HTTP/1.1" 200 308
+INFO 2024-02-16 13:48:52,270 basehttp 1404 14588 "GET /orders HTTP/1.1" 301 0
+INFO 2024-02-16 13:48:52,276 basehttp 1404 4108 "GET /orders/ HTTP/1.1" 200 1289
