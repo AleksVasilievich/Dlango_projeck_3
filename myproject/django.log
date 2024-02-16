@@ -1,0 +1,20 @@
+INFO 2024-02-14 23:58:56,015 autoreload 8360 2896 Watching for file changes with StatReloader
+INFO 2024-02-15 00:07:50,474 autoreload 8360 2896 C:\Users\Aleksandr\PycharmProjects\django_lesson\myproject\myproject\settings.py changed, reloading.
+INFO 2024-02-15 00:07:50,957 autoreload 804 8688 Watching for file changes with StatReloader
+INFO 2024-02-15 00:10:46,397 autoreload 13596 13252 Watching for file changes with StatReloader
+INFO 2024-02-15 00:11:26,755 autoreload 15140 7368 Watching for file changes with StatReloader
+INFO 2024-02-15 00:42:37,774 autoreload 11356 10824 Watching for file changes with StatReloader
+INFO 2024-02-15 00:43:37,786 autoreload 14448 12128 Watching for file changes with StatReloader
+INFO 2024-02-15 00:46:29,256 autoreload 13412 5456 Watching for file changes with StatReloader
+INFO 2024-02-15 00:46:30,591 basehttp 13412 10060 "GET / HTTP/1.1" 200 388
+INFO 2024-02-15 00:46:32,837 basehttp 13412 10060 "GET / HTTP/1.1" 200 388
+INFO 2024-02-15 00:46:33,975 basehttp 13412 10060 "GET / HTTP/1.1" 200 388
+INFO 2024-02-15 00:46:40,608 basehttp 13412 10060 "GET /about/ HTTP/1.1" 200 308
+INFO 2024-02-15 00:48:11,850 autoreload 12284 13668 Watching for file changes with StatReloader
+INFO 2024-02-15 00:48:14,459 basehttp 12284 10780 "GET / HTTP/1.1" 200 388
+INFO 2024-02-15 00:48:16,015 basehttp 12284 10780 "GET / HTTP/1.1" 200 388
+INFO 2024-02-16 09:56:38,574 autoreload 12056 8464 Watching for file changes with StatReloader
+INFO 2024-02-16 09:56:41,591 basehttp 12056 1720 "GET / HTTP/1.1" 200 388
+WARNING 2024-02-16 09:56:41,764 log 12056 1720 Not Found: /favicon.ico
+WARNING 2024-02-16 09:56:41,764 basehttp 12056 1720 "GET /favicon.ico HTTP/1.1" 404 2441
+INFO 2024-02-16 09:56:52,454 basehttp 12056 1720 "GET /about/ HTTP/1.1" 200 308
