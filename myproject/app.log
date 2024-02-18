@@ -2476,3 +2476,313 @@ INFO:root:Посещена главная страница
 INFO:django.server:"GET / HTTP/1.1" 200 388
 INFO:root:Посещена главная страница
 INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена страница myapp2
+INFO:django.server:"GET /myapp2/ HTTP/1.1" 200 337
+ERROR:django.request:Internal Server Error: /myapp2/orders/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: client_orders() missing 1 required positional argument: 'client_id'
+ERROR:django.server:"GET /myapp2/orders/ HTTP/1.1" 500 61818
+WARNING:django.request:Not Found: /myapp2/orders/1
+WARNING:django.server:"GET /myapp2/orders/1 HTTP/1.1" 404 2798
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\django_lesson\myproject\myapp2\urls.py changed, reloading.
+INFO:root:Посещена страница myapp2
+INFO:django.server:"GET /myapp2/ HTTP/1.1" 200 337
+ERROR:django.request:Internal Server Error: /myapp2/client_orders/1/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\myproject\myapp2\views.py", line 15, in client_orders
+    client = Client.objects.get(pk=client_id)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+myapp2.models.Client.DoesNotExist: Client matching query does not exist.
+ERROR:django.server:"GET /myapp2/client_orders/1/ HTTP/1.1" 500 74228
+ERROR:django.request:Internal Server Error: /myapp2/client_orders/4/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\myproject\myapp2\views.py", line 15, in client_orders
+    client = Client.objects.get(pk=client_id)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+myapp2.models.Client.DoesNotExist: Client matching query does not exist.
+ERROR:django.server:"GET /myapp2/client_orders/4/ HTTP/1.1" 500 74228
+ERROR:django.request:Internal Server Error: /myapp2/client_orders/5/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\myproject\myapp2\views.py", line 17, in client_orders
+    seven_days_ago = timezone.now() - timedelta(days=7)
+AttributeError: 'int' object has no attribute 'now'
+ERROR:django.server:"GET /myapp2/client_orders/5/ HTTP/1.1" 500 65872
+WARNING:django.request:Not Found: /myapp2/client_orders/
+WARNING:django.server:"GET /myapp2/client_orders/ HTTP/1.1" 404 2852
+INFO:root:Посещена страница myapp2
+INFO:django.server:"GET /myapp2/ HTTP/1.1" 200 337
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\django_lesson\myproject\myapp2\admin.py changed, reloading.
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:django.server:"GET /admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4356
+INFO:django.server:"GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO:django.server:"GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:root:Посещена страница myapp2
+INFO:django.server:"GET /myapp2/ HTTP/1.1" 200 337
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\django_lesson\myproject\myapp2\urls.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\django_lesson\myproject\myapp2\urls.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\django_lesson\myproject\myapp2\urls.py changed, reloading.
+INFO:django.utils.autoreload:C:\Users\Aleksandr\PycharmProjects\django_lesson\myproject\myapp2\urls.py changed, reloading.
+INFO:django.server:"GET /myapp2/admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/login/?next=/myapp2/admin/ HTTP/1.1" 200 4370
+INFO:django.server:"GET /admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/login/?next=/admin/ HTTP/1.1" 200 4356
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4619
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4625
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4628
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4628
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 200 4622
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:django.server:"POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 7514
+INFO:django.server:"GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO:django.server:"GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO:django.server:"GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 7514
+INFO:django.server:"GET /admin/myapp2/client/ HTTP/1.1" 200 10425
+INFO:django.server:"GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+INFO:django.server:"GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO:django.server:"GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO:django.server:"GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO:django.server:"GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO:django.server:"GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO:django.server:"GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO:django.server:"GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO:django.server:"GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO:django.server:"GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO:django.server:"GET /admin/myapp2/client/add/ HTTP/1.1" 200 12519
+INFO:django.server:"GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO:django.server:"GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO:django.server:"GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO:django.server:"GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO:django.server:"GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO:django.server:"GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO:django.server:"GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO:django.server:"POST /admin/myapp2/client/add/ HTTP/1.1" 200 12832
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/myapp2/client/add/ HTTP/1.1" 200 12832
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/myapp2/client/add/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/myapp2/client/ HTTP/1.1" 200 10989
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO:django.server:"GET /admin/myapp2/order/ HTTP/1.1" 200 8543
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp2/order/add/ HTTP/1.1" 200 13964
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO:django.server:"POST /admin/myapp2/order/add/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/myapp2/order/ HTTP/1.1" 200 10279
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp2/order/add/ HTTP/1.1" 200 13964
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/myapp2/order/add/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/myapp2/order/ HTTP/1.1" 200 10624
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp2/order/add/ HTTP/1.1" 200 13964
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/myapp2/order/add/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/myapp2/order/ HTTP/1.1" 200 10968
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp2/ HTTP/1.1" 200 6293
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 8988
+WARNING:django.request:Not Found: /admin/client_orders/2/
+WARNING:django.server:"GET /admin/client_orders/2/ HTTP/1.1" 404 4854
+WARNING:django.request:Not Found: /admin/client_orders/2
+WARNING:django.server:"GET /admin/client_orders/2 HTTP/1.1" 404 4851
+WARNING:django.request:Not Found: /admin/client_orders/
+WARNING:django.server:"GET /admin/client_orders/ HTTP/1.1" 404 4848
+WARNING:django.request:Not Found: /admin/client_orders/3
+WARNING:django.server:"GET /admin/client_orders/3 HTTP/1.1" 404 4851
+WARNING:django.request:Not Found: /admin/client_orders/3/
+WARNING:django.server:"GET /admin/client_orders/3/ HTTP/1.1" 404 4854
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 8988
+INFO:root:Посещена страница myapp2
+INFO:django.server:"GET /myapp2/ HTTP/1.1" 200 337
+ERROR:django.request:Internal Server Error: /myapp2/client_orders/2/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\myproject\myapp2\views.py", line 15, in client_orders
+    client = Client.objects.get(pk=client_id)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+myapp2.models.Client.DoesNotExist: Client matching query does not exist.
+ERROR:django.server:"GET /myapp2/client_orders/2/ HTTP/1.1" 500 74685
+WARNING:django.request:Not Found: /myapp2/client_orders/
+WARNING:django.server:"GET /myapp2/client_orders/ HTTP/1.1" 404 2852
+ERROR:django.request:Internal Server Error: /myapp2/client_orders/1/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\myproject\myapp2\views.py", line 15, in client_orders
+    client = Client.objects.get(pk=client_id)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+myapp2.models.Client.DoesNotExist: Client matching query does not exist.
+ERROR:django.server:"GET /myapp2/client_orders/1/ HTTP/1.1" 500 74685
+INFO:django.server:"GET /myapp2/client_orders/1 HTTP/1.1" 301 0
+ERROR:django.request:Internal Server Error: /myapp2/client_orders/1/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\myproject\myapp2\views.py", line 15, in client_orders
+    client = Client.objects.get(pk=client_id)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+myapp2.models.Client.DoesNotExist: Client matching query does not exist.
+ERROR:django.server:"GET /myapp2/client_orders/1/ HTTP/1.1" 500 74685
+ERROR:django.request:Internal Server Error: /myapp2/client_orders/3/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\myproject\myapp2\views.py", line 15, in client_orders
+    client = Client.objects.get(pk=client_id)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+myapp2.models.Client.DoesNotExist: Client matching query does not exist.
+ERROR:django.server:"GET /myapp2/client_orders/3/ HTTP/1.1" 500 74685
+INFO:django.server:"GET /admin/myapp2/client/7/change/ HTTP/1.1" 200 12820
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp2/client/ HTTP/1.1" 200 10772
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp2/order/ HTTP/1.1" 200 10754
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp2/product/ HTTP/1.1" 200 10790
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/ HTTP/1.1" 200 6012
+INFO:django.server:"GET /admin/auth/group/ HTTP/1.1" 200 8933
+INFO:django.server:"GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp2/ HTTP/1.1" 200 6293
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 8988
+ERROR:django.request:Internal Server Error: /myapp2/client_orders/3/
+Traceback (most recent call last):
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\myproject\myapp2\views.py", line 15, in client_orders
+    client = Client.objects.get(pk=client_id)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\Aleksandr\PycharmProjects\django_lesson\venv\lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+myapp2.models.Client.DoesNotExist: Client matching query does not exist.
+ERROR:django.server:"GET /myapp2/client_orders/3/ HTTP/1.1" 500 74822
+INFO:django.server:"GET /admin/myapp2/client/ HTTP/1.1" 200 10772
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp2/client/ HTTP/1.1" 200 10772
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp2/client/add/ HTTP/1.1" 200 12519
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/myapp2/client/add/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/myapp2/client/ HTTP/1.1" 200 11336
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+WARNING:django.request:Not Found: /myapp2/client_orders/fedia/
+WARNING:django.server:"GET /myapp2/client_orders/fedia/ HTTP/1.1" 404 2870
+WARNING:django.request:Not Found: /myapp2/client_orders/3/fedia/
+WARNING:django.server:"GET /myapp2/client_orders/3/fedia/ HTTP/1.1" 404 2876
+INFO:django.server:"GET /admin/myapp2/ HTTP/1.1" 200 6293
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 9352
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 9352
+INFO:django.server:"GET /admin/password_change/ HTTP/1.1" 200 8776
+INFO:django.server:"GET /admin/myapp2/order/ HTTP/1.1" 200 10754
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp2/client/ HTTP/1.1" 200 11119
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp2/product/ HTTP/1.1" 200 10790
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 9352
+INFO:django.server:"GET /admin/password_change/ HTTP/1.1" 200 8776
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 9352
+INFO:root:Посещена главная страница
+INFO:django.server:"GET / HTTP/1.1" 200 388
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 9352
+INFO:django.server:"GET /admin/myapp2/client/ HTTP/1.1" 200 11119
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/group/ HTTP/1.1" 200 8933
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/auth/user/ HTTP/1.1" 200 13073
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 9352
+INFO:django.server:"GET /admin/myapp2/client/8/change/ HTTP/1.1" 200 12819
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /static/admin/img/calendar-icons.svg HTTP/1.1" 200 1094
+INFO:django.server:"GET /admin/myapp2/client/ HTTP/1.1" 200 11119
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /admin/myapp2/ HTTP/1.1" 200 6293
+INFO:django.server:"GET /admin/ HTTP/1.1" 200 9352
+INFO:django.server:"GET /admin/myapp2/product/ HTTP/1.1" 200 10790
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/myapp2/product/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/myapp2/product/ HTTP/1.1" 200 10933
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"GET /static/admin/img/icon-alert.svg HTTP/1.1" 200 504
+INFO:django.server:"GET /admin/myapp2/product/3/change/ HTTP/1.1" 200 12712
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546
+INFO:django.server:"POST /admin/myapp2/product/3/change/ HTTP/1.1" 302 0
+INFO:django.server:"GET /admin/myapp2/product/ HTTP/1.1" 200 11012
+INFO:django.server:"GET /admin/jsi18n/ HTTP/1.1" 200 17546

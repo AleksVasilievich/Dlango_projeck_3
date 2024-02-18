@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Client Orders</title>
+</head>
+<body>
+    <h1>Client Orders for {{ client.name }}</h1>
+
+    <h2>Last 7 Days</h2>
+    <ul>
+        {% for order in orders_last_7_days %}
+            <li>
+                Order date: {{ order.order_date }}
+                <ul>
+                    {% for product in order.products.all %}
+                        <li>{{ product.name }} - {{ product.price }}</li>
+                    {% endfor %}
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <h2>Last 30 Days</h2>
+    <ul>
+        {% for order in orders_last_30_days %}
+            <li>
+                Order date: {{ order.order_date }}
+                <ul>
+                    {% for product in order.products.all %}
+                        <li>{{ product.name }} - {{ product.price }}</li>
+                    {% endfor %}
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+
+    <h2>Last 365 Days</h2>
+    <ul>
+        {% for order in orders_last_365_days %}
+            <li>
+                Order date: {{ order.order_date }}
+                <ul>
+                    {% for product in order.products.all %}
+                        <li>{{ product.name }} - {{ product.price }}</li>
+                    {% endfor %}
+                </ul>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
