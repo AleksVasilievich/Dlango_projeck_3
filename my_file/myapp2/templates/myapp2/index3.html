@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order List</title>
+</head>
+<body>
+    <h1>Orders for the Last Week</h1>
+    <ul>
+        {% for order in orders_week %}
+            <li>{{ order }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Orders for the Last Month</h1>
+    <ul>
+        {% for order in orders_month %}
+            <li>{{ order.order_data }}</li>
+        {% endfor %}
+    </ul>
+
+    <h1>Orders for the Last Year</h1>
+    <ul>
+        {% for order in orders_year %}
+            <li>{{ order }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

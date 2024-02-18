@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Пятый шаблон Django</title>
+</head>
+<body>
+    <h1>Список товаров заказов клиента за последние {{ days }} дней</h1>
+    <ul>
+        {% for product in products %}
+            <li>{{ product.name }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
