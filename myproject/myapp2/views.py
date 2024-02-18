@@ -1,5 +1,6 @@
 from datetime import timedelta
-from time import timezone
+# from time import timezone
+from django.utils import timezone
 
 from django.shortcuts import render
 from django.http import HttpResponse
@@ -31,10 +32,6 @@ def client_orders(request, client_id):
     }
 
     return render(request, 'orders.html', context)
-
-
-
-
 
 
 def index2(request):
